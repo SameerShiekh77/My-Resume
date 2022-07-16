@@ -7,7 +7,10 @@
     font-family: 'Times New Roman', Times, serif;
     /* font-family: "Montserrat", sans-serif; */
 }
-
+a {
+    text-decoration: none;
+    color: white;
+}
 body {
     background: #585c68;
     font-size: 18px;
@@ -42,7 +45,7 @@ body {
 
 .resume .resume_left .resume_profile {
     width: 100%;
-    height: 280px;
+    /* height: 280px; */
 }
 
 .resume .resume_left .resume_profile img {
@@ -86,10 +89,12 @@ body {
 .resume .resume_left ul li:last-child {
     margin-bottom: 0;
 }
-
+.locationIcon{
+    width: 57px !important;
+}
 .resume .resume_left ul li .icon {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
     background: #fff;
     color: #0bb5f4;
     border-radius: 50%;
@@ -205,6 +210,12 @@ body {
     background: #0bb5f4;
 }
 
+.semi-bold {
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
 .resume .resume_right .resume_interest ul {
     display: flex;
     justify-content: space-between;
@@ -235,4 +246,9 @@ body {
 
 .resume .resume_right .resume_interest ul li:last-child:before {
     display: none;
+}
+
+.tel, .mail, .web {
+    text-decoration: none;
+    color: var(--lightBlueColr);
 }
